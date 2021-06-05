@@ -26,6 +26,9 @@ class Button {
     this.setTransitionEndListener()
   }
 
+  /**
+   * As CSS transition ends, reset color with deselct() function
+   */
   setTransitionEndListener = () => {
     this.element.addEventListener('transitionend', () => {
       console.log('transition ended')
